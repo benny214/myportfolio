@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Open+Sans+Condensed:300,700&subset=latin,cyrillic);
+
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+li{
+    display: inline-block;
+}
+header{
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    height: 73px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header-logo a{
+    font-size: 2.5em;
+    color: #000;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+}
+.home-introduction{
+    background-image: url(https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&fm=jpg&s=d8cce13e5d977aeec5bdbec256987adf);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+}
+.home-introduction .container{
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    padding: 27em 0;
+}
+.portfolio{
+    background: #F3F3F3;
+}
