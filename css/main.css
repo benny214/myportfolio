@@ -1,11 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Open+Sans+Condensed:300,700&subset=latin,cyrillic);
 
-
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
 li{
-    display: inline-block;
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+img{
+    width: 350px;
+    height: 196px;
 }
 header{
     background: #fff;
@@ -23,21 +30,116 @@ header{
     letter-spacing: 0.3em;
 }
 .home-introduction{
-    background-image: url(https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&fm=jpg&s=d8cce13e5d977aeec5bdbec256987adf);
+    background-image: url(../img/bg-intro.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    opacity: 0.6;
 
 }
-.home-introduction .container{
+.home-introduction .container-fluid{
     text-align: center;
     height: 100%;
     color: #fff;
-    padding: 27em 0;
+    padding: 16em 0;
 }
+.home-introduction .container-fluid p{
+    font-size: 1.3em;
+}
+.home-introduction .container-fluid a{
+    font-weight: bold;
+    color:#fff;
+}
+.fa-chevron-circle-down{
+    font-size: 5em;
+}
+.skills{
+    padding-bottom: 3.16em;
+    padding-top: 3.16em;
+    text-align: left;
+}
+.skills h3{
+    font-size: 1.17em;
+}
+.fa-mobile,
+.fa-code-fork,
+.fa-code {
+    font-size: 2em;
+    padding-right: 5px;
+}
+
 .portfolio{
     background: #F3F3F3;
+    padding-bottom: 3.16em;
+}
+.work {
+    margin-bottom: 2.5em;
+    overflow: hidden;
+    position: relative;
+}
+.work .mask{
+    opacity: 0;
+    background-color:rgba(115,146,184, 0.7);
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    height: 196px;
+    width: 350px;
+    top: 0px;
+    padding: 1em;
+
+}
+.work .mask:hover{
+    transition: 300ms ease-in;
+    opacity: 1;
+}
+.mask a{
+    color:#ccc;
+}
+.feedback{
+    padding: 3.16em 0 3.16em 0;
+}
+.feedback input,
+ .form-control {
+    border-radius: 0;
+    border: 1.9px solid #000;
+}
+.feedback button{
+    float: right;
+    background-color: #fff;
+    border-color: #000;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    font-weight: 400;
+}
+.feedback button:hover{
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    transition: 300ms ease-in;
+-webkit-transition:300ms ease-in;
+-moz-transition: 300ms ease-in;
+-o-transition: 300ms ease-in;
+    
+}
+footer{
+    background: #000;
+    color: #fff;
+}
+footer ul{
+    margin: 14px 0 14px 0;
+}
+footer li {
+    display: inline-block;
+    margin-right: 1em;
+    float: right;
+}
+.social{
+    text-align: right;
+    font-size: 1.3em;
+}
+.social a{
+    text-decoration: none;
+    color: #fff;
 }
