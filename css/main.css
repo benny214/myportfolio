@@ -6,21 +6,21 @@ body{
 
 li{
     list-style: none;
+    font-size: 1.3em;
 }
 ul{
     padding: 0;
 }
 img{
-    width: 350px;
-    height: 196px;
+    width: 100%;
+    height: 100%;
+    border: 8px solid #fff;
 }
 header{
     background: #fff;
     border-bottom: 1px solid #e4e4e4;
     height: 73px;
-    position: fixed;
     width: 100%;
-    z-index: 100;
 }
 .header-logo a{
     font-size: 2.5em;
@@ -74,7 +74,7 @@ header{
     padding-bottom: 3.16em;
 }
 .work {
-    margin-bottom: 2.5em;
+    margin-bottom: 1.2em;
     overflow: hidden;
     position: relative;
 }
@@ -84,10 +84,12 @@ header{
     position: absolute;
     text-align: center;
     color: #fff;
-    height: 196px;
-    width: 350px;
-    top: 0px;
-    padding: 1em;
+    height: 96.5%;
+    width: 93%;
+    top: 7px;
+    padding: 5em;
+    left: 23px;
+    font-size: 1.5em;
 
 }
 .work .mask:hover{
@@ -95,7 +97,7 @@ header{
     opacity: 1;
 }
 .mask a{
-    color:#ccc;
+    color:#fff;;
 }
 .feedback{
     padding: 3.16em 0 3.16em 0;
