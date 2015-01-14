@@ -156,32 +156,40 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="well well-sm">
-                        <form class="form-horizontal" action="" method="post">
+                        <form class="form-horizontal" action="mailer.php" method="post">
                             <fieldset>
 
                                 <!-- ИМЯ-->
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label" for="name">Имя</label>
-                                    <div class="col-md-9">
-                                        <input id="name" name="name" type="text" placeholder="Ваше имя" class="form-control">
-                                    </div>
+                                <label for="inputName" class="col-lg-2 control-label">Имя</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Ваше имя">
                                 </div>
+                            </div>
 
                                 <!-- EMAIL-->
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label" for="email">Ваш E-mail</label>
-                                    <div class="col-md-9">
-                                        <input id="email" name="email" type="text" placeholder="Ваш E-mail" class="form-control">
-                                    </div>
+                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Ваш Email">
                                 </div>
+                            </div>
+
+                            <!-- ТЕМА -->
+                            <div class="form-group">
+                                <label for="inputSubject" class="col-lg-2 control-label">Тема</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Тема письма">
+                                </div>
+                            </div>
 
                                 <!-- СООБЩЕНИЕ -->
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label" for="message">Ваше сообщение</label>
-                                    <div class="col-md-9">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Оставьте ваше сообщение здесь..." rows="5"></textarea>
-                                    </div>
+                                <label for="inputPassword1" class="col-lg-2 control-label">Сообщение</label>
+                                <div class="col-lg-10">
+                                    <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Ваше сообщение..."></textarea>
                                 </div>
+                            </div>
 
                                 <!-- FORM ACTION -->
                                 <div class="form-group">
