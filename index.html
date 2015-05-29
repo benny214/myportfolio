@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html class="no-js">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
 
-    <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
 </head>
 
 <body>
 
-    <!--ШАПКА-->
-
-    <header>
+	<header>
         <div class="container">
             <div class="col-md-12">
                 <span class="header-logo"><a href="/">VTumanov</a></span>
@@ -53,12 +64,12 @@
         <div class="container skills">
             <div class="row">
                 <div class="col-md-4">
-                    <h3><i class="fa fa-code"></i>&#160;&#160;Front-end</h3>
+                    <h3><i class="fa fa-code"></i>&#160;&#160;Верстка</h3>
                     <ul>
                         <li>HTML / HTML5</li>
                         <li>CSS / CSS3</li>
                         <li>JavaScript / JQuery</li>
-                        <li>Wordpress</li>
+                        <li>Drupal</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -66,15 +77,16 @@
                     <ul>
                         <li>Sass/Compass</li>
                         <li>Git / GitHub</li>
-                        <li>Bootstrap</li>
                         <li>Npm</li>
                         <li>Gulp</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3><i class="fa fa-mobile"></i>&#160;&#160;Responsive design</h3> 
+                    <h3><i class="fa fa-mobile"></i>&#160;&#160;Адаптивный дизайн</h3> 
                     <ul>
                         <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Balsamiq</li>
                         <li>Адаптивная вёрстка</li>
                         <li>Media queries</li>
                         <li>Оптимизация изображений</li>
@@ -154,15 +166,13 @@
 
     <section>
         <div class="container feedback">
-        <script type="text/javascript" src="http://form.jotformeu.com/jsform/50132818407349"></script>
         
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="well well-sm">
                         <form class="form-horizontal" action="mailer.php" method="post">
                             <fieldset disabled>
 
-                                
                                 <div class="form-group">
                                 <label for="inputName" class="col-lg-2 control-label">Имя</label>
                                 <div class="col-lg-10">
@@ -170,7 +180,6 @@
                                 </div>
                             </div>
 
-                                
                                 <div class="form-group">
                                 <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
                                 <div class="col-lg-10">
@@ -178,7 +187,6 @@
                                 </div>
                             </div>
 
-                           
                             <div class="form-group">
                                 <label for="inputSubject" class="col-lg-2 control-label">Тема</label>
                                 <div class="col-lg-10">
@@ -186,7 +194,6 @@
                                 </div>
                             </div>
 
-                                
                                 <div class="form-group">
                                 <label for="inputPassword1" class="col-lg-2 control-label">Сообщение</label>
                                 <div class="col-lg-10">
@@ -194,7 +201,6 @@
                                 </div>
                             </div>
 
-                                
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <button type="submit" class="btn">Отправить</button>
@@ -203,7 +209,7 @@
                             </fieldset>
                         </form>
                     </div>
-                </div> -->
+                </div>
                 
             </div>
     </section>
@@ -238,12 +244,26 @@
             </div>
         </div>
     </footer>
+	
+	<div class="hidden"></div>
 
-    <script src="js/vendor/jquery-1.11.1.min.js"></script>
-    
-    
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 
-    <script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	
+	<script src="js/common.js"></script>
+	
 </body>
-
 </html>
