@@ -99,7 +99,7 @@ h1, h2, h3{
 }
 .home-introduction .container-fluid{
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     color: #fff;
     padding: 8em 0;
 }
@@ -209,4 +209,34 @@ footer li {
 .social a{
     text-decoration: none;
     color: #fff;
+}
+[class*='contact']{
+    display: block;
+     margin: auto;
+     width: 100%;
+     text-align: left;
+}
+.contact__label{
+    background: transparent;
+    font-weight: bold;
+}
+
+.contact__input,
+.contact__area{
+    padding: 3px;
+    border: 1px solid #222;
+
+}
+
+.contact__submit{
+    margin: 1em auto;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #222;
+    webkit-transition: .3s ease;
+            transition: .3s ease;
+}
+.contact__submit:hover{
+    border: 1px solid rgb(151,201,37);
+    background: rgb(151,201,37);
 }

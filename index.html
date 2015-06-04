@@ -46,14 +46,10 @@
         <div class="container-fluid">
             <div class="col-md-8 col-md-offset-2">
                 <h1>
-                            Let's create something great together
-                        </h1>
+                    Давайте создавать прекрасное вместе
+                </h1>
                 <p>Меня зовут Виктор Туманов. Я начинающий front-end разработчик.<br> <a href="#">Моё резюме</a></p>
             </div>
-           <!--  <div class="col-md-2 col-md-offset-5 arrow">
-                <a href="#" id="SCROLL_LINK"><i class="fa fa-chevron-circle-down"></i></a>
-            </div> -->
-
         </div>
     </section>
 
@@ -169,46 +165,15 @@
         
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="well well-sm">
-                        <form class="form-horizontal" action="mailer.php" method="post">
-                            <fieldset disabled>
-
-                                <div class="form-group">
-                                <label for="inputName" class="col-lg-2 control-label">Имя</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Ваше имя">
-                                </div>
-                            </div>
-
-                                <div class="form-group">
-                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Ваш Email">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputSubject" class="col-lg-2 control-label">Тема</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Тема письма">
-                                </div>
-                            </div>
-
-                                <div class="form-group">
-                                <label for="inputPassword1" class="col-lg-2 control-label">Сообщение</label>
-                                <div class="col-lg-10">
-                                    <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Ваше сообщение..."></textarea>
-                                </div>
-                            </div>
-
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <button type="submit" class="btn">Отправить</button>
-                                    </div>
-                                </div>
-                            </fieldset>
+                    <form class="contact">
+                            <label for="name" class="contact__label">Имя</label>
+                            <input type="text" id="name" class="contact__input">
+                            <label for="mail" class="contact__label">Email</label>
+                            <input type="text" id="mail" class="contact__input">
+                            <label for="mess" class="contact__label">Сообщение</label>
+                            <textarea name="message" id="mess" rows="3" class="contact__area"></textarea>
+                            <button class="contact__submit" type="submit">Отправить</button>
                         </form>
-                    </div>
                 </div>
                 
             </div>
