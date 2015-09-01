@@ -225,5 +225,9 @@ footer li {
 .contact__area{
     padding: 3px;
     border: 1px solid #222;
+}
 
+.contact__area{
+    margin-bottom: 25px;
+    resize: none;
 }
