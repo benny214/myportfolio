@@ -179,6 +179,7 @@ h1, h2, h3{
     padding: 0.5em 2em;
     font-size: 1em;
     font-weight: 400;
+    text-align: center;
 }
 .feedback button:hover{
     background-color: #000;
@@ -228,6 +229,6 @@ footer li {
 }
 
 .contact__area{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     resize: none;
 }
